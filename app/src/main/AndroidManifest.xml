@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jbaker7.dronecalendar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SD Drone Club"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.jbaker7.dronecalendar.LoginActivity"
+            android:label="SD Drone Club">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jbaker7.dronecalendar.RegisterActivity"
+            android:label="Register New User"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.jbaker7.dronecalendar.BaseActivity"
+            android:label="SD Drone Club"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.jbaker7.dronecalendar.AddEventActivity"
+            android:label="Schedule New Event" />
+        <activity android:name="com.jbaker7.dronecalendar.EditEventActivity"
+            android:label="Edit Event" />
+
+    </application>
+
+</manifest>
